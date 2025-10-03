@@ -10,6 +10,8 @@ else
   DEST_DIR="$HOME/.local/share/icons"
 fi
 
+mkdir -p "$DEST_DIR"
+
 if [ -d "$DEST_DIR/Twilight-cursors" ]; then
   rm -r "$DEST_DIR/Twilight-cursors"
 fi
