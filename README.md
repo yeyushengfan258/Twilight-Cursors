@@ -30,6 +30,15 @@ run:
 This will generate the pixmaps and appropriate aliases.
 The freshly compiled cursor theme will be located in `dist/`
 
+`build.sh` also generates `dist/cursors_scalable/`, the SVG cursor format
+introduced by [KDE Breeze](https://github.com/KDE/breeze/blob/master/cursors/svg-cursor-format.md).
+GNOME Shell 51 and later only load cursors in this format and fall back to
+Adwaita otherwise. To regenerate it alone (no Inkscape needed):
+
+```
+python3 build-scalable.py dist/cursors_scalable
+```
+
 ## Preview
 ![Lyra](preview-1.png)
 ![Lyra](preview-2.png)

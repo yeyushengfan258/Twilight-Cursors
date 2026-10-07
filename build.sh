@@ -65,3 +65,6 @@ THEME="Twilight Cursors"
 
 create svg
 
+# generate SVG cursors (cursors_scalable) from the same sources
+python3 "$SRC"/../build-scalable.py "$SRC"/../dist/cursors_scalable
+
